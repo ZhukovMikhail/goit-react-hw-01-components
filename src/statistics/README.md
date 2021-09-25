@@ -54,5 +54,6 @@
 import statisticalData from '/путь/к/statistical-data.json';
 
 <Statistics title="Upload stats" stats={statisticalData} />;
-<Statistics stats={statisticalData} />;
+
+// <Statistics stats={statisticalData} />;
 ```
