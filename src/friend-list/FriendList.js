@@ -1,18 +1,29 @@
-export default function FriendList(friends) {
+import styles from './FriendsList.module.css';
+function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
-      {friends.map(friend => (
-        <li key={friend.id} className="item">
-          <span className="status">{friend.isOnline}</span>
-          <img
-            className="avatar"
-            src={friend.avatar}
-            alt={friend.name}
-            width="48"
-          />
-          <p className="name">{friend.name}</p>
-        </li>
-      ))}
-    </ul>
+    <div className={styles.container}>
+      <ul className={styles.friendsList}>
+        {friends.map(friend => (
+          <li key={friend.id} className={styles.item}>
+            <span
+              className={styles.status}
+              style={
+                friend.isOnline
+                  ? { backgroundColor: 'green' }
+                  : { backgroundColor: 'red' }
+              }
+            ></span>
+            <img
+              className={styles.avatar}
+              src={friend.avatar}
+              alt={friend.name}
+              width="48"
+            />
+            <p className={styles.name}>{friend.name}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
+export default FriendList;

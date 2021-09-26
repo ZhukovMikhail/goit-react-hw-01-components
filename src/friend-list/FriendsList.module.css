@@ -1,0 +1,59 @@
+.container {
+  background-color: #ccc;
+  padding-bottom: 10px;
+}
+.friendsList {
+  width: 250px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 4px 3px 6px 4px rgba(155, 155, 155, 0.75);
+  -webkit-box-shadow: 4px 3px 6px 4px rgba(155, 155, 155, 0.75);
+  -moz-box-shadow: 4px 3px 6px 4px rgba(155, 155, 155, 0.75);
+  overflow: hidden;
+  padding: 10px;
+}
+.item {
+  display: flex;
+  align-items: center;
+
+  padding: 5px 30px;
+  /* outline-style: solid;
+    outline-width: 1px;
+    outline-color: gray; */
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  box-shadow: 4px 3px 6px 4px rgba(155, 155, 155, 0.75);
+  -webkit-box-shadow: 4px 3px 6px 4px rgba(155, 155, 155, 0.75);
+  -moz-box-shadow: 4px 3px 6px 4px rgba(155, 155, 155, 0.75);
+  overflow: hidden;
+}
+
+.avatar {
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 10px;
+  border-radius: 10%;
+  background-color: #ccc;
+}
+.name {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+.status {
+  display: flex;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+  align-content: center;
+}
+.isOnline {
+  background-color: green;
+}
+.isOffline {
+  background-color: red;
+}

@@ -1,0 +1,88 @@
+.container {
+  background-color: #ccc;
+  display: flex;
+  margin-top: 20px;
+}
+.profile {
+  width: 300px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 3%;
+  box-shadow: 4px 3px 6px 4px rgba(155, 155, 155, 0.75);
+  -webkit-box-shadow: 4px 3px 6px 4px rgba(155, 155, 155, 0.75);
+  -moz-box-shadow: 4px 3px 6px 4px rgba(155, 155, 155, 0.75);
+  overflow: hidden;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.avatar {
+  margin: 0 auto;
+  width: 150px;
+  border-radius: 50%;
+  background-color: grey;
+  justify-content: center;
+}
+.name {
+  /* margin-top: 20px; */
+  font-size: 25px;
+  font-weight: 600;
+  align-content: center;
+  text-align: center;
+  margin-top: 15px;
+}
+.tag {
+  /* margin-top: 20px; */
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+  color: rgb(114, 112, 112);
+  margin-top: 10px;
+}
+.location {
+  /* margin-top: 20px; */
+  composes: tag;
+  /* font-size: 20px;
+    justify-content: center;
+    text-align: center; */
+}
+
+.stats {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(231, 231, 231);
+  /* border-radius: 5%; */
+}
+.statsItem {
+  border-width: 1px;
+  outline-color: rgb(212, 212, 212);
+  outline-style: solid;
+  outline-width: 1px;
+  list-style: none;
+  padding: 20px 0;
+  align-content: space-between;
+  flex-basis: calc(100% / 3);
+}
+.label {
+  display: block;
+  align-content: center;
+  text-align: center;
+  font-size: 153x;
+  color: rgb(110, 110, 110);
+}
+.quantity {
+  display: block;
+  align-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+}
