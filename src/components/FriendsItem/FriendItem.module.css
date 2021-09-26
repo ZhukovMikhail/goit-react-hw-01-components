@@ -1,4 +1,3 @@
-/* однинаковый файл CSS так как изначально писался под один компонент */
 .container {
   background-color: #ccc;
   padding-bottom: 10px;
@@ -19,6 +18,9 @@
   align-items: center;
 
   padding: 5px 30px;
+  /* outline-style: solid;
+    outline-width: 1px;
+    outline-color: gray; */
   margin-bottom: 10px;
   border-radius: 5px;
 
