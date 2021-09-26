@@ -1,4 +1,5 @@
 import styles from './FriendsList.module.css';
+import PropTypes from 'prop-types';
 function FriendList({ friends }) {
   return (
     <div className={styles.container}>
@@ -26,4 +27,9 @@ function FriendList({ friends }) {
     </div>
   );
 }
+
+FriendList.propTypes = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.number.isRequired,
+};
 export default FriendList;

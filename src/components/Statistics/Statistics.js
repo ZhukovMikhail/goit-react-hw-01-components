@@ -1,4 +1,5 @@
-import styles from './/Statistics.module.css';
+import styles from './Statistics.module.css';
+import PropTypes from 'prop-types';
 function Statistics({ title, stats }) {
   return (
     <div className={styles.container}>
@@ -24,4 +25,10 @@ function Statistics({ title, stats }) {
     </div>
   );
 }
+
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.number.isRequired,
+};
+
 export default Statistics;

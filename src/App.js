@@ -1,12 +1,11 @@
-import FriendList from './friend-list/FriendList';
-import friends from './friend-list/friends.json';
-import Profile from './social-profile/Profile';
-import TransactionHistory from './transaction-history/TransactionHistory';
-import transactions from './transaction-history/transactions.json';
-
-import Statistics from './statistics/Statistics';
-import statisticalData from './statistics/statistical-data.json';
-import * as user from './social-profile/user.json';
+import Profile from './components/Profile/Profile';
+import * as user from './components/Profile/user.json';
+import Statistics from './components/Statistics/Statistics';
+import statisticalData from './components/Statistics/statistical-data.json';
+import FriendList from './components/FriendList/FriendList';
+import friends from './components/FriendList/friends.json';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import transactions from './components/TransactionHistory/transactions.json';
 
 console.log(friends);
 

@@ -1,4 +1,5 @@
 import styles from './Profile.module.css';
+import PropTypes from 'prop-types';
 function Profile(user) {
   return (
     <div className={styles.container}>
@@ -40,4 +41,20 @@ function Profile(user) {
     </div>
   );
 }
+Profile.defaultProps = {
+  avatar:
+    'https://www.irishrsa.ie/wp-content/uploads/2017/03/default-avatar.png',
+};
+Profile.propTypes = {
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }),
+};
+
 export default Profile;
