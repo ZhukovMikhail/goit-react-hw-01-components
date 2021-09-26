@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './TransactionHistory.module.css';
 function TransactionHistory({ items }) {
   return (
@@ -13,7 +14,7 @@ function TransactionHistory({ items }) {
         <tbody>
           {items.map((item, index) => (
             <tr key={item.id}>
-              {console.log(index % 2 === 0)}
+              {/* {console.log(index % 2 === 0)} */}
               <td
                 className={styles.td}
                 style={
@@ -51,4 +52,16 @@ function TransactionHistory({ items }) {
     </div>
   );
 }
+
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.oneOf(['invoice', 'payment', 'withdrawal', 'deposit'])
+        .isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
+};
 export default TransactionHistory;
